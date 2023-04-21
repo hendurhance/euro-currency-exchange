@@ -61,17 +61,17 @@ The postman collection is available in the `postman` directory.
 
 | Method | Endpoint | Query Parameters | Description |
 | --- | --- | --- | --- |
-| GET | /exchange | amount, to | Get the exchange rate of the Euro against other currencies. |
+| GET | /api/exchange | amount, to | Get the exchange rate of the Euro against other currencies. |
 
 The swagger documentation is available at `/docs` folder. Open the `index.html` file in your browser.
 
 
 ## Usage
 
-### Default Route (GET) [/exchange?amount=100&to=USD]
-By default, the exchange endpoint is available at `/exchange`. You can change this by publishing the config file and changing the `route` key.
+### Default Route (GET) [/api/exchange?amount=100&to=USD]
+By default, the exchange endpoint is available at `/api/exchange`. You can change this by publishing the config file and changing the `route` key.
 
-You might want to use `https://yourdomain.com/exchange?amount=100&to=USD` to get the exchange rate of 100 Euros to US Dollars.
+You might want to use `https://yourdomain.com/api/exchange?amount=100&to=USD` to get the exchange rate of 100 Euros to US Dollars.
 
 ### Custom Route
 You can also use a custom route by publishing the config file and changing the `route` key.
