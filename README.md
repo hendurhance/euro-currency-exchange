@@ -31,21 +31,23 @@ Open composer.json and add the following to the repositories section:
 Note: You have to copy the package to the `packages/martian` directory.
 
 ```json
-// composer.json
+{
+    // composer.json
 
-"require": {
-    "martian/euro-currency-exchange": "@dev"
-},
+    "require": {
+        "martian/euro-currency-exchange": "@dev"
+    },
 
-"repositories": [
-    "local": {
-        "type": "path",
-        "url": "packages/martian/euro-currency-exchange",
-        "options": {
-            "symlink": true
+    "repositories": [
+        "local": {
+            "type": "path",
+            "url": "packages/martian/euro-currency-exchange",
+            "options": {
+                "symlink": true
+            }
         }
-    }
-]
+    ]
+}
 ```
 
 Then run `composer update` to install the package.
